@@ -20,7 +20,7 @@ jobs:
         password: ${{ secrets.DOCKERHUBPASSWORD }}
 
     - name: Build Docker Image
-      run: docker build -t varshathorat/guestbook-go:latest .
+      run: docker build -t varshathorat/guestbook_go:latest .
 
     - name: Push Docker Image
-      run: docker push varshathorat/guestbook.go:latest
+      run: docker push varshathorat/guestbook_go:latest
