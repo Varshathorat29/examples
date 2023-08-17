@@ -9,8 +9,7 @@ jobs:
   push_to_registry:
   name: push docker image to Docker Hub
   runs-on: ubuntu-latest
-
-    steps:
+ steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
