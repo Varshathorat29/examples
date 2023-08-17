@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  push_to_registery:
+  push_to_registry:
   name: push docker image to Docker Hub
   runs-on: ubuntu-latest
 
