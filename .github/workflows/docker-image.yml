@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/assignment-1
+        run: docker build ./guestbook-go --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/assignment-1
 
       - name: Docker Push
         run: docker push ${{ secrets.DOCKER_USERNAME }}/assignment-1
