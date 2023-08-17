@@ -6,8 +6,9 @@ on:
       - master
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  push_to_registery:
+  name: push docker image to Docker Hub
+  runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Repository
